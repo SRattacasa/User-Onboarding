@@ -51,7 +51,7 @@ const Form = (props) => {
     setformState({ ...formState, [e.target.name]: value });
   };
 
-  const validate = (e) => {
+  const validate = (e) => {  
     yup
       .reach(formSchema, e.target.name)
       .validate(e.target.value)
